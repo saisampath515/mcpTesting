@@ -1,7 +1,7 @@
 from fastmcp import FastMCP
 import feedparser
 
-mcp = FastMCP(name="FreeCodeCamp Feed Searcher")
+mcp = FastMCP("FreeCodeCamp", host="0.0.0.0")
 
 @mcp.tool()
 def fcc_news_search(query:str, max_results:int=3):
